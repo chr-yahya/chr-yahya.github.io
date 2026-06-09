@@ -1,60 +1,182 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yahya Charaf | Data Engineer & DevOps Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
+    <title>Yahya Charaf | Data Engineer & DevOps</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b',
+                        accentBlue: '#38bdf8',
+                        accentGreen: '#34d399'
+                    }
+                }
+            }
         }
-        header {
-            background: #1a2a3a;
-            color: #fff;
-            padding: 2rem;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .card {
-            background: #fff;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 { color: #1a2a3a; border-bottom: 2px solid #1a2a3a; padding-bottom: 0.3rem; }
-        a { color: #007acc; text-decoration: none; font-weight: bold; }
-    </style>
+    </script>
 </head>
-<body>
+<body class="bg-darkBg text-slate-100 font-sans antialiased">
 
-    <header>
-        <h1>Yahya Charaf</h1>
-        <p>Étudiant en Ingénierie | Data Engineering & DevOps Architecture</p>
-    </header>
+    <nav class="sticky top-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-accentBlue">YAHYA.CHARAF<span class="text-accentGreen">_</span></a>
+            <div class="space-x-6 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-accentBlue transition">À Propos</a>
+                <a href="#projects" class="hover:text-accentBlue transition">Projets</a>
+                <a href="#experience" class="hover:text-accentBlue transition">Parcours</a>
+                <a href="mailto:charaf.yahya@example.com" class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-md transition border border-slate-700">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <div class="container">
-        <div class="card">
-            <h2>👋 À propos de moi</h2>
-            <p>Actuellement en double diplôme d'ingénieur, je me spécialise dans la conception de pipelines de données robustes, l'orchestration de workflows et l'industrialisation des architectures microservices (Docker, Kubernetes, CI/CD).</p>
+    <section id="about" class="max-w-6xl mx-auto px-6 pt-16 pb-24 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="max-w-2xl">
+            <span class="text-accentGreen font-mono text-sm block mb-2">&gt;_ Hello World</span>
+            <h1 class="text-5xl font-extrabold tracking-tight mb-4">
+                Yahya Charaf 
+            </h1>
+            <p class="text-2xl text-slate-400 font-medium mb-6">
+                Ingénieur en Double Diplôme <span class="text-accentBlue">EILCO & ENSA</span>
+            </p>
+            <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                Spécialisé en <strong class="text-slate-200">Data Engineering</strong> et architectures <strong class="text-slate-200">DevOps</strong>. Concepteur de pipelines de données scalables, passionné par l'orchestration, l'automatisation CI/CD et la conteneurisation. Fondateur de l'organisation technique <span class="text-accentGreen">Innov'EILCO</span>.
+            </p>
+            <div class="flex flex-wrap gap-3 mb-8">
+                <span class="bg-slate-800 text-xs text-slate-300 px-3 py-1.5 rounded-md font-mono border border-slate-700">Python</span>
+                <span class="bg-slate-800 text-xs text-slate-300 px-3 py-1.5 rounded-md font-mono border border-slate-700">SQL</span>
+                <span class="bg-slate-800 text-xs text-slate-300 px-3 py-1.5 rounded-md font-mono border border-slate-700">dbt</span>
+                <span class="bg-slate-800 text-xs text-slate-300 px-3 py-1.5 rounded-md font-mono border border-slate-700">DuckDB</span>
+                <span class="bg-slate-800 text-xs text-slate-300 px-3 py-1.5 rounded-md font-mono border border-slate-700">Docker</span>
+                <span class="bg-slate-800 text-xs text-slate-300 px-3 py-1.5 rounded-md font-mono border border-slate-700">Kubernetes</span>
+                <span class="bg-slate-800 text-xs text-slate-300 px-3 py-1.5 rounded-md font-mono border border-slate-700">Apache Airflow</span>
+                <span class="bg-slate-800 text-xs text-slate-300 px-3 py-1.5 rounded-md font-mono border border-slate-700">GitHub Actions</span>
+            </div>
+            <div class="flex gap-4">
+                <a href="#projects" class="bg-accentBlue hover:bg-sky-500 text-darkBg font-bold px-6 py-3 rounded-md transition shadow-lg shadow-sky-500/20">
+                    Découvrir mes projets
+                </a>
+                <a href="https://github.com/chr-yahya" target="_blank" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-md transition border border-slate-700">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <div class="w-full md:w-80 bg-cardBg border border-slate-700 rounded-lg p-6 font-mono text-xs shadow-2xl relative overflow-hidden">
+            <div class="flex gap-1.5 mb-4">
+                <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+            </div>
+            <p class="text-slate-500">// Statut Académique</p>
+            <p class="text-accentBlue">const <span class="text-slate-200">student</span> = {</p>
+            <p class="pl-4 text-slate-300">level: <span class="text-accentGreen">"ING2 (4ème année)"</span>,</p>
+            <p class="pl-4 text-slate-300">focus: [<span class="text-accentGreen">"Data"</span>, <span class="text-accentGreen">"DevOps"</span>],</p>
+            <p class="pl-4 text-slate-300">apprenticeship_target: <span class="text-accentGreen">"Septembre 2026"</span></p>
+            <p class="text-accentBlue">};</p>
+            <p class="text-slate-500 mt-4">// CI/CD Status</p>
+            <p class="text-accentGreen"><i class="fas fa-check-circle"></i> build: success</p>
+            <p class="text-accentGreen"><i class="fas fa-check-circle"></i> tests: 100% passed</p>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-slate-900 border-y border-slate-800 py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-bold tracking-tight">Projets Techniques Realisés</h2>
+                <div class="h-px bg-slate-700 flex-1"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-cardBg border border-slate-700 rounded-lg p-6 flex flex-col justify-between hover:border-accentBlue/50 transition shadow-xl">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-2xl text-accentBlue"><i class="fas fa-database"></i></span>
+                            <span class="bg-accentGreen/10 text-accentGreen text-xs font-mono px-2 py-1 rounded border border-accentGreen/20">
+                                <i class="fas fa-circle-check"></i> CI/CD Live
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-100">Financial Data Pipeline</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                            Architecture moderne de traitement de données financières (Modern Data Stack). Extraction via scripts Python, stockage transitoire, transformation analytique modulaire avec dbt + DuckDB, orchestrée localement. Pipeline validé automatiquement à chaque commit par un processus GitHub Actions robuste.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 mb-4 text-[11px] font-mono text-slate-400">
+                            <span>Python</span> • <span>dbt</span> • <span>DuckDB</span> • <span>GitHub Actions</span> • <span>Airflow</span>
+                        </div>
+                        <a href="https://github.com/chr-yahya/financial-data-pipeline" target="_blank" class="inline-flex items-center gap-2 text-sm text-accentBlue hover:underline">
+                            Code source & Architecture <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-cardBg border border-slate-700 rounded-lg p-6 flex flex-col justify-between hover:border-accentBlue/50 transition shadow-xl">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-2xl text-accentBlue"><i class="fas fa-brain"></i></span>
+                            <span class="bg-blue-500/10 text-accentBlue text-xs font-mono px-2 py-1 rounded border border-blue-500/20">Prediction System</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-100">AIAFS Project</h3>
+                        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                            Système prédictif hydrologique basé sur l'intelligence artificielle. Traitement de flux de données en temps réel et implémentation de réseaux de neurones pour anticiper les variations et les risques hydrologiques.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 mb-4 text-[11px] font-mono text-slate-400">
+                            <span>Neural Networks</span> • <span>Python</span> • <span>Real-time Data</span> • <span>Predictive Analytics</span>
+                        </div>
+                        <span class="text-sm text-slate-500 italic">Projet Académique Majeur</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="flex items-center gap-4 mb-12">
+            <h2 class="text-3xl font-bold tracking-tight">Parcours & Responsabilités</h2>
+            <div class="h-px bg-slate-700 flex-1"></div>
         </div>
 
-        <div class="card">
-            <h2>🚀 Projet Phare</h2>
-            <h3>Financial Data Pipeline (Modern Data Stack)</h3>
-            <p>Architecture ETL/ELT automatisée. Extraction via Python, ingestion PostgreSQL, transformation analytique ultra-rapide avec DuckDB + dbt, orchestration Airflow et validation stricte via GitHub Actions.</p>
-            <a href="https://github.com/chr-yahya/financial-data-pipeline" target="_blank">🔗 Voir le projet sur GitHub</a>
+        <div class="space-y-8 max-w-3xl">
+            <div class="border-l-2 border-accentBlue pl-6 relative">
+                <div class="absolute w-3 h-3 bg-accentBlue rounded-full -left-[7px] top-1.5"></div>
+                <span class="text-xs font-mono text-accentBlue block mb-1">Depuis Octobre 2025</span>
+                <h3 class="text-xl font-bold text-slate-100">Président Fondateur — Innov'EILCO</h3>
+                <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                    Création et direction d'une association technique étudiante dédiée à l'informatique et à l'innovation technologique. 
+                </p>
+                <ul class="text-slate-400 text-xs mt-2 list-disc list-inside space-y-1">
+                    <li>Organisation de la compétition d'algorithmique <strong class="text-slate-300">Challenge Problem Solving</strong> (Nov 2025).</li>
+                    <li>Conception et animation de l'atelier de vulgarisation <strong class="text-slate-300">Data en Chantier</strong> (Mars 2026), expliquant des architectures complexes via des modèles physiques concrets.</li>
+                </ul>
+            </div>
+
+            <div class="border-l-2 border-slate-700 pl-6 relative">
+                <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[7px] top-1.5"></div>
+                <span class="text-xs font-mono text-slate-500 block mb-1">Été 2025</span>
+                <h3 class="text-xl font-bold text-slate-300">Stage Technique — Data Science & Text Mining</h3>
+                <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                    Immersion professionnelle axée sur le traitement automatique des langues (NLP) et l'extraction de connaissances à partir de volumes massifs de données textuelles non structurées.
+                </p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-500 text-xs text-center py-8 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Yahya Charaf. Conçu pour la robustesse.</p>
+            <div class="flex gap-4 text-lg">
+                <a href="https://github.com/chr-yahya" target="_blank" class="hover:text-slate-300 transition"><i class="fab fa-github"></i></a>
+                <a href="mailto:charaf.yahya@example.com" class="hover:text-slate-300 transition"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
