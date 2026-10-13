@@ -460,7 +460,7 @@ footer{border-top:1.5px solid var(--border);padding:40px 0;text-align:center}
       <h1>Yahya<br><strong>Charaf</strong></h1>
       <p class="subtitle">
         <b>Data Engineer · Data Analyst · Data Scientist</b><br>
-        Double diplômé ENSAO × EILCO — ING2. Je construis des architectures de données robustes, des analyses décisionnelles et des modèles qui passent en production.
+        Double diplômé ENSAO × EILCO. Je construis des architectures de données robustes, des analyses décisionnelles et des modèles qui passent en production.
       </p>
       <div class="badge-avail">Disponible · Stage PFE · 2027</div>
       <div class="hero-tags">
@@ -509,25 +509,26 @@ footer{border-top:1.5px solid var(--border);padding:40px 0;text-align:center}
   <div class="exp-list">
 
     <div class="exp-card">
-      <div class="exp-stripe-current"></div>
+      <div class="exp-stripe-done"></div>
       <div class="exp-content">
         <div class="exp-header">
           <div>
-            <div class="exp-role">Stage Ingénieur d'études IA / Data</div>
+            <div class="exp-role">Stage Assistant Ingénieur IA & Vision 3D</div>
             <div class="exp-company">Laboratoire LISIC (ULCO) — Équipe LoRAL, Calais</div>
           </div>
           <div class="exp-meta">
             <span class="exp-date">Juin – Sept. 2026</span>
-            <span class="pill pill-v">En cours</span>
+            <span class="pill pill-t">Terminé</span>
           </div>
         </div>
         <ul class="exp-bullets">
-          <li><b>Recherche en Imagerie Médicale 3D</b> — Traitement de données IRM complexes. Ingestion, normalisation spatiale 3D et structuration sur cluster de calcul distribué (CalculCO).</li>
-          <li><b>Deep Learning Avancé & Transformers</b> — Segmentation sémantique 3D de la prostate avec des architectures de pointe : <b>SwinUNETR</b>, <b>Attention U-Net 3D</b> et modèles <b>Multi-Task</b> (PyTorch).</li>
-          <li><b>Évaluation & Visualisation</b> — Évaluation quantitative stricte et rendu interactif 3D des segmentations (Plotly) pour une meilleure interprétabilité clinique.</li>
+          <li><b>Fiabilisation & Ingestion de Données (PROSTATEx)</b> — Audit approfondi de la cohorte IRM révélant 80 discordances image-masque. Reconstruction complète patient par patient à partir des sources NIfTI (.nii.gz) pour établir une cohorte saine de 189 patients avec gestion de l'anisotropie spatiale (spacing 3D natif).</li>
+          <li><b>Deep Learning Volumétrique & Benchmark SOTA</b> — Conception et évaluation progressive de modèles (2D, 2.5D, U-Net 3D multi-label PZ/TZ, cascade de présence). Benchmark comparatif rigoureux sur cluster GPU (CalcULCO / OAR) entre Transformers (<b>SwinUNETR</b>) et architectures convolutionnelles auto-configurées (<b>nnU-Net v2 ResEncM</b>, <b>MedNeXt-S</b>).</li>
+          <li><b>Performances SOTA & Évaluation Physique</b> — Établissement d'une baseline de référence (nnU-Net ResEncM) atteignant <b>91,12 % de Dice 3D</b> sur jeu de test indépendant (+3,68 pts vs SwinUNETR), un <b>HD95 de 3,67 mm</b>, un <b>ASSD de 1,05 mm</b> et une réduction des faux positifs de plus de 30 %.</li>
+          <li><b>Interprétabilité Clinique & Visualisation 3D</b> — Développement d'une interface interactive d'inspection (navigation coupe par coupe, comparateur de modèles, mode duel) et pipeline de reconstruction volumétrique 3D par Marching Cubes et lissage de surface.</li>
         </ul>
         <div class="exp-stack">
-          <span class="chip">PyTorch</span><span class="chip">SwinUNETR</span><span class="chip">Attention U-Net 3D</span><span class="chip">Multi-Task Learning</span><span class="chip">Plotly 3D</span><span class="chip">CalculCO</span>
+          <span class="chip">PyTorch</span><span class="chip">nnU-Net v2</span><span class="chip">SwinUNETR</span><span class="chip">MedNeXt</span><span class="chip">Marching Cubes</span><span class="chip">CalcULCO (OAR)</span><span class="chip">NIfTI</span><span class="chip">Python</span>
         </div>
       </div>
     </div>
@@ -632,15 +633,17 @@ footer{border-top:1.5px solid var(--border);padding:40px 0;text-align:center}
     </div>
 
     <!-- Prostate Segmentation -->
-    <div class="project-card pc-teal" data-dims="sci">
+    <div class="project-card pc-teal" data-dims="sci eng ana">
       <div class="card-icon">🧠</div>
       <div style="display:flex;gap:5px;margin-bottom:12px">
         <span class="card-tag tag-on-dark">Science</span>
+        <span class="card-tag tag-on-dark">Engineering</span>
+        <span class="card-tag tag-on-dark">Analytics</span>
       </div>
-      <div class="card-title">Prostate Segmentation 3D (LISIC)</div>
-      <p class="card-desc">Projet de recherche en imagerie médicale. Conception et entraînement d'architectures Deep Learning 3D avancées (SwinUNETR, Attention U-Net 3D, Multi-Task Learning) pour la segmentation précise de la prostate sur des volumes IRM. Évaluation quantitative des incertitudes et création de visualisations 3D interactives (Plotly).</p>
+      <div class="card-title">Segmentation 3D de la Prostate en IRM (LISIC)</div>
+      <p class="card-desc">De la fiabilisation des données au benchmark de modèles volumétriques. Audit et reconstruction d'une cohorte de 189 patients (PROSTATEx) depuis les fichiers sources NIfTI après détection de 80 anomalies. Benchmark comparatif rigoureux sur cluster GPU (CalcULCO) entre Transformers (SwinUNETR) et CNN auto-configurés (nnU-Net v2 ResEncM, MedNeXt-S). Le modèle de référence retenu atteint 91,12 % de Dice 3D, un HD95 de 3,67 mm et un ASSD de 1,05 mm sur jeu de test indépendant. Développement d'une interface interactive d'inspection (comparateur, mode duel) et reconstruction 3D par Marching Cubes.</p>
       <div class="card-stack">
-        <span class="chip-light">PyTorch</span><span class="chip-light">SwinUNETR</span><span class="chip-light">Attention U-Net 3D</span><span class="chip-light">Multi-Task</span><span class="chip-light">Plotly 3D</span><span class="chip-light">Medical AI</span>
+        <span class="chip-light">PyTorch</span><span class="chip-light">nnU-Net v2</span><span class="chip-light">SwinUNETR</span><span class="chip-light">MedNeXt</span><span class="chip-light">Marching Cubes</span><span class="chip-light">CalcULCO (OAR)</span><span class="chip-light">NIfTI</span><span class="chip-light">Medical AI</span>
       </div>
       <a href="https://github.com/chr-yahya/prostate_segmentation" target="_blank" class="card-link link-light" style="margin-top:auto">Code source →</a>
     </div>
@@ -738,7 +741,7 @@ footer{border-top:1.5px solid var(--border);padding:40px 0;text-align:center}
     <div class="skill-group sg-d">
       <div class="skill-group-title">Data Science & IA</div>
       <div class="skill-list">
-        <span class="skill-item">PyTorch</span><span class="skill-item">LangGraph</span><span class="skill-item">ChromaDB</span><span class="skill-item">CNN</span><span class="skill-item">LSTM</span><span class="skill-item">XGBoost</span><span class="skill-item">Scikit-learn</span><span class="skill-item">TensorFlow</span><span class="skill-item">NLP / RAG</span><span class="skill-item">Azure AI Foundry</span><span class="skill-item">Azure OpenAI</span><span class="skill-item">FAISS</span><span class="skill-item">SentenceTransformers</span><span class="skill-item">LLM (Qwen3)</span><span class="skill-item">Time Series</span><span class="skill-item">R</span>
+        <span class="skill-item">PyTorch</span><span class="skill-item">nnU-Net v2</span><span class="skill-item">SwinUNETR</span><span class="skill-item">LangGraph</span><span class="skill-item">ChromaDB</span><span class="skill-item">CNN</span><span class="skill-item">LSTM</span><span class="skill-item">XGBoost</span><span class="skill-item">Scikit-learn</span><span class="skill-item">TensorFlow</span><span class="skill-item">NLP / RAG</span><span class="skill-item">Azure AI Foundry</span><span class="skill-item">Azure OpenAI</span><span class="skill-item">FAISS</span><span class="skill-item">SentenceTransformers</span><span class="skill-item">LLM (Qwen3)</span><span class="skill-item">Time Series</span><span class="skill-item">R</span>
       </div>
     </div>
 
@@ -752,7 +755,7 @@ footer{border-top:1.5px solid var(--border);padding:40px 0;text-align:center}
     <div class="skill-group sg-b">
       <div class="skill-group-title">Cloud & DevOps</div>
       <div class="skill-list">
-        <span class="skill-item">Docker · Compose</span><span class="skill-item">GCP · BigQuery</span><span class="skill-item">AWS · EC2 · S3</span><span class="skill-item">Databricks</span><span class="skill-item">Prometheus</span><span class="skill-item">GitHub Actions</span><span class="skill-item">Git</span><span class="skill-item">PostGIS · GeoServer</span>
+        <span class="skill-item">Docker · Compose</span><span class="skill-item">CalculCO (OAR)</span><span class="skill-item">GCP · BigQuery</span><span class="skill-item">AWS · EC2 · S3</span><span class="skill-item">Databricks</span><span class="skill-item">Prometheus</span><span class="skill-item">GitHub Actions</span><span class="skill-item">Git</span><span class="skill-item">PostGIS · GeoServer</span>
       </div>
     </div>
 
