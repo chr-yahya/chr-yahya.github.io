@@ -456,13 +456,13 @@ footer{border-top:1.5px solid var(--border);padding:40px 0;text-align:center}
 <section id="hero" style="border:none;padding-top:96px">
   <div class="hero-inner">
     <div>
-      <div class="eyebrow">Open to alternance · 12 mois</div>
+      <div class="eyebrow">Recherche Stage PFE · 2027</div>
       <h1>Yahya<br><strong>Charaf</strong></h1>
       <p class="subtitle">
         <b>Data Engineer · Data Analyst · Data Scientist</b><br>
         Double diplômé ENSAO × EILCO — ING2. Je construis des architectures de données robustes, des analyses décisionnelles et des modèles qui passent en production.
       </p>
-      <div class="badge-avail">Disponible · Alternance · Dès Septembre 2026</div>
+      <div class="badge-avail">Disponible · Stage PFE · 2027</div>
       <div class="hero-tags">
         <span class="tag tag-v">dbt · Airflow · Spark</span>
         <span class="tag tag-v">PyTorch · Scikit-learn</span>
@@ -488,12 +488,12 @@ footer{border-top:1.5px solid var(--border);padding:40px 0;text-align:center}
       <div class="profile-avatar">YC</div>
       <div class="profile-name">Yahya Charaf</div>
       <div class="profile-roles">Data Engineer<br>Data Analyst · Data Scientist</div>
-      <div class="profile-row"><span class="profile-label">Statut</span><span class="profile-val">ING2 · 5ème année</span></div>
-      <div class="profile-row"><span class="profile-label">Cible</span><span class="profile-val">Alternance 12 mois</span></div>
-      <div class="profile-row"><span class="profile-label">Dispo</span><span class="profile-val">Sept. 2026</span></div>
+      <div class="profile-row"><span class="profile-label">Statut</span><span class="profile-val">Élève-Ingénieur</span></div>
+      <div class="profile-row"><span class="profile-label">Cible</span><span class="profile-val">Stage PFE 2027</span></div>
+      <div class="profile-row"><span class="profile-label">Dispo</span><span class="profile-val">2027</span></div>
       <div class="profile-row"><span class="profile-label">Mobilité</span><span class="profile-val">France entière</span></div>
       <div class="profile-row"><span class="profile-label">Langues</span><span class="profile-val">FR C1 · EN C1</span></div>
-      <div class="profile-status">Disponible pour alternance</div>
+      <div class="profile-status">En recherche de stage PFE 2027</div>
     </div>
   </div>
 </section>
@@ -616,17 +616,19 @@ footer{border-top:1.5px solid var(--border);padding:40px 0;text-align:center}
     </div>
 
     <!-- KRONOS -->
-    <div class="project-card pc-dark" data-dims="eng sci">
-      <div class="card-icon">⏳</div>
+    <div class="project-card pc-dark" data-dims="eng sci ana">
+      <div class="card-icon">⚡</div>
       <div style="display:flex;gap:5px;margin-bottom:12px">
         <span class="card-tag tag-on-dark">Engineering</span>
         <span class="card-tag tag-on-dark">Science</span>
+        <span class="card-tag tag-on-dark">Analytics</span>
       </div>
-      <div class="card-title">KRONOS — Plateforme de Données Agentique</div>
-      <p class="card-desc">Architecture Medallion pilotée par agents IA. Orchestration via LangGraph coordonnant des agents spécialisés (ingestion Bronze, nettoyage Silver, KPIs Gold). Fiabilité garantie par serveur MCP isolant les outils, et contrats de schéma stricts (Pydantic/Pandera) pour la gouvernance avant intégration DWH. Tests automatisés (pytest) en CI/CD GitLab.</p>
+      <div class="card-title">KRONOS 2.0 — Plateforme Multi-Agents & SCADA Industriel</div>
+      <p class="card-desc">Architecture industrielle multi-agents (LangGraph) pour la maintenance prédictive de 50 machines IoT (1,75M lignes). Ingestion PostgreSQL bas-niveau ultra-rapide (155 Mo en 6s via flux COPY), moteur RAG (ChromaDB) appliquant les directives de maintenance constructeur (Directive 14-B), détection d'anomalies non supervisée (Isolation Forest sur vibrations 3D) et provisioning automatisé d'un centre de supervision SCADA Grafana (14 panneaux avec annotations dynamiques de pannes).</p>
       <div class="card-stack">
-        <span class="chip-light">LangGraph</span><span class="chip-light">Serveur MCP</span><span class="chip-light">Medallion Data</span><span class="chip-light">Pydantic</span><span class="chip-light">Pandera</span><span class="chip-light">pytest</span><span class="chip-light">GitLab CI/CD</span>
+        <span class="chip-light">LangGraph</span><span class="chip-light">PostgreSQL 15</span><span class="chip-light">ChromaDB (RAG)</span><span class="chip-light">Isolation Forest</span><span class="chip-light">Grafana 10 SCADA</span><span class="chip-light">Docker Compose</span><span class="chip-light">Azure OpenAI</span><span class="chip-light">Python</span>
       </div>
+      <a href="https://github.com/chr-yahya/KRONOS_Data_Reliability" target="_blank" class="card-link link-light" style="margin-top:auto">Code source & Architecture →</a>
     </div>
 
     <!-- Prostate Segmentation -->
@@ -736,7 +738,7 @@ footer{border-top:1.5px solid var(--border);padding:40px 0;text-align:center}
     <div class="skill-group sg-d">
       <div class="skill-group-title">Data Science & IA</div>
       <div class="skill-list">
-        <span class="skill-item">PyTorch</span><span class="skill-item">CNN</span><span class="skill-item">LSTM</span><span class="skill-item">XGBoost</span><span class="skill-item">Scikit-learn</span><span class="skill-item">TensorFlow</span><span class="skill-item">NLP / RAG</span><span class="skill-item">Azure AI Foundry</span><span class="skill-item">Azure OpenAI</span><span class="skill-item">FAISS</span><span class="skill-item">SentenceTransformers</span><span class="skill-item">LLM (Qwen3)</span><span class="skill-item">Time Series</span><span class="skill-item">R</span>
+        <span class="skill-item">PyTorch</span><span class="skill-item">LangGraph</span><span class="skill-item">ChromaDB</span><span class="skill-item">CNN</span><span class="skill-item">LSTM</span><span class="skill-item">XGBoost</span><span class="skill-item">Scikit-learn</span><span class="skill-item">TensorFlow</span><span class="skill-item">NLP / RAG</span><span class="skill-item">Azure AI Foundry</span><span class="skill-item">Azure OpenAI</span><span class="skill-item">FAISS</span><span class="skill-item">SentenceTransformers</span><span class="skill-item">LLM (Qwen3)</span><span class="skill-item">Time Series</span><span class="skill-item">R</span>
       </div>
     </div>
 
